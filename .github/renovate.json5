@@ -9,6 +9,26 @@
   ],
   packageRules: [
     {
+      "matchManagers": ["pep621", "poetry"],
+      "rangeStrategy": "bump",
+      "groupName": "Python dependencies"
+    },
+    {
+      "matchManagers": ["pep621", "poetry"],
+      "matchDepTypes": ["charm-libs"],
+      "rangeStrategy": "in-range-only",
+      "groupName": "Python dependencies"
+    },
+    // Disable Python updates
+    // (Python version should be updated when Ubuntu version is updated)
+    {
+      "matchManagers": ["pep621", "poetry"],
+      // Renovate uses "dependencies" instead of "main" for top-level dependency group
+      "matchDepTypes": ["dependencies"],
+      "matchDepNames": ["python"],
+      "enabled": false
+    },
+    {
       matchPackageNames: [
         'pydantic',
       ],
