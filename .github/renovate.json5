@@ -82,4 +82,5 @@
       versioningTemplate: 'loose',
     },
   ],
+  "osvVulnerabilityAlerts": true
 }
