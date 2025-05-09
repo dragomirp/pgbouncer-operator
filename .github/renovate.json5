@@ -29,6 +29,13 @@
       "enabled": false
     },
     {
+      "matchManagers": ["pep621", "poetry"],
+      // Renovate uses "dependencies" instead of "main" for top-level dependency group
+      "matchDepTypes": ["dependencies"],
+      "matchDepNames": ["python"],
+      "enabled": false
+    },
+    {
       matchPackageNames: [
         'pydantic',
       ],
