@@ -14,9 +14,11 @@
       "groupName": "Python dependencies"
     },
     {
-      "matchManagers": ["pep621", "poetry"],
-      "matchDepTypes": ["charm-libs", "libs"],
+      "matchManagers": ["pep621"],
       "rangeStrategy": "in-range-only",
+      "matchJsonata": [
+          "depType = 'dependency-groups' and managerData.depGroup = 'charm-libs'"
+      ],
       "groupName": "Python dependencies"
     },
     // Disable Python updates
