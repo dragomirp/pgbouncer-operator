@@ -10,7 +10,7 @@ requires-python = ">=3.8"
 [dependency-groups]
 charm = [
     "jinja2==3.1.6",
-    "ops==2.20.0",
+    "ops==2.21.1",
     "tenacity==9.0.0",
     "pydantic==1.10.22",
     "psycopg2==2.9.10",
