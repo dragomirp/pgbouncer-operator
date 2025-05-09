@@ -61,7 +61,7 @@
     },
     {
       matchManagers: [
-        'poetry',
+        'poetry', "pep621"
       ],
       matchPackageNames: [
         'coverage',
