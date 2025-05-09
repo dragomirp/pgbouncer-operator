@@ -23,17 +23,11 @@
     },
     // Disable Python updates
     // (Python version should be updated when Ubuntu version is updated)
+
     {
-      "matchManagers": ["pep621", "poetry"],
-      // Renovate uses "dependencies" instead of "main" for top-level dependency group
-      "matchDepTypes": ["dependencies"],
+      "matchManagers": ["pep621"],
       "matchDepNames": ["python"],
-      "enabled": false
-    },
-    {
-      "matchManagers": ["pep621", "poetry"],
-      // Renovate uses "dependencies" instead of "main" for top-level dependency group
-      "matchDepNames": ["python"],
+      "matchDatasources": ["python-version"],
       "enabled": false
     },
     {
