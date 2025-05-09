@@ -15,7 +15,7 @@ charm = [
     "pydantic==1.10.22",
     "psycopg2==2.9.10",
     "psycopg[c]==3.2.6",
-    "cryptography==42.0.8"
+    "cryptography"
 ]
 
 charm-libs = [
