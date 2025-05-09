@@ -30,7 +30,7 @@ parts:
       - libpq-dev
     uv-groups:
       - charm
-      - libs
+      - charm-libs
     override-build: |
       # Workaround for https://github.com/canonical/charmcraft/issues/2068
       # rustup used to install rustc and cargo, which are needed to build Python dependencies with Rust from source

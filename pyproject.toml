@@ -17,7 +17,7 @@ charm = [
     "psycopg[c]==3.2.6"
 ]
 
-libs = [
+charm-libs = [
     # data_platform_libs/v0/data_interfaces.py
     "ops>=2.0.0",
     # data_platform_libs/v0/upgrade.py
@@ -31,7 +31,7 @@ libs = [
     "cryptography",
     "jsonschema",
     # tempo_coordinator_k8s/v0/charm_tracing.py
-    "opentelemetry-exporter-otlp-proto-http==1.21.0"
+    "opentelemetry-exporter-otlp-proto-http<1.21.1"
 ]
 
 format = [
