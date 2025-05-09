@@ -15,7 +15,7 @@
     },
     {
       "matchManagers": ["pep621", "poetry"],
-      "matchDepTypes": ["charm-libs"],
+      "matchDepTypes": ["charm-libs", "libs"],
       "rangeStrategy": "in-range-only",
       "groupName": "Python dependencies"
     },
