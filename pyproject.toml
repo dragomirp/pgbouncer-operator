@@ -14,7 +14,7 @@ charm = [
     "tenacity==9.0.0",
     "pydantic==1.10.22",
     "psycopg2==2.9.10",
-    "psycopg[c]==3.2.6"
+    "psycopg[c]==3.2.7"
 ]
 
 libs = [
