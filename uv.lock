@@ -1492,7 +1492,7 @@ charm-libs = [
     { name = "cosl" },
     { name = "cryptography" },
     { name = "jsonschema" },
-    { name = "opentelemetry-exporter-otlp-proto-http", specifier = "<1.21.1" },
+    { name = "opentelemetry-exporter-otlp-proto-http", specifier = "==1.21.0" },
     { name = "ops", specifier = ">=2.0.0" },
     { name = "poetry-core" },
     { name = "pydantic", specifier = "<2" },
