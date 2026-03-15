@@ -11,6 +11,7 @@
   reviewers: [
     'team:data-postgresql',
   ],
+  "enabledManagers": ["poetry", "pep621", "github-actions", "regex"],
   packageRules: [
     {
       "matchManagers": ["pep621"],
