@@ -13,6 +13,14 @@
   ],
   packageRules: [
     {
+      "matchManagers": ["pep621"],
+      "rangeStrategy": "in-range-only",
+      "matchJsonata": [
+          "depType = 'dependency-groups' and managerData.depGroup = 'libs'"
+      ],
+      "groupName": "Python dependencies"
+    },
+    {
       matchPackageNames: [
         'pydantic',
       ],
