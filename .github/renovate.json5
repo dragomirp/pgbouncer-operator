@@ -3,6 +3,11 @@
   extends: [
     'github>canonical/data-platform//renovate_presets/charm.json5',
   ],
+  "lockFileMaintenance": {
+    "enabled": true, 
+    "schedule": ["* 1-5 * * 2"],  // Tuesday 01:00-05:00 UTC
+    "groupName": "Python dependencies"
+  },
   reviewers: [
     'team:data-postgresql',
   ],
